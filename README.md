@@ -1,1 +1,1 @@
-# stats2
+# All things statistical
