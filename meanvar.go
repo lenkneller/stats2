@@ -12,6 +12,7 @@ import (
 //	m = (x₀+x₁+...)/n,
 //	s2 = ((x₀-m)²+(x₁-m)²+...)/(n-1),
 //	n = len(x).
+// Precondition: n ≥ 2.
 func MeanVar(x []float64) (m, s2 float64) {
 	n := len(x)
 	if n < 2 {
