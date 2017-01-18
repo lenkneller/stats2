@@ -9,13 +9,13 @@ import (
 	"sort"
 )
 
-// Summary5 computes a 5-number summary s of x₀,x₁,...:
-//	s₀	minimum
-//	s₁	lower hinge
-//	s₂	median
-//	s₃	upper hinge
-//	s₄	maximum
-// Precondition: len(x) ≥ 5.
+// Summary5 computes a 5-number summary s of x[0],...,x[n-1]:
+//	s[0]	minimum
+//	s[1]	lower hinge
+//	s[2]	median
+//	s[3]	upper hinge
+//	s[4]	maximum
+// Precondition: n ≥ 5.
 func Summary5(x []float64) (s [5]float64) {
 	var n, m, k int
 	var L, U float64

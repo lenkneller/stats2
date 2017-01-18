@@ -8,10 +8,9 @@ import (
 	"math"
 )
 
-// MeanVar computes the sample mean (m) and the sample variance (s2) of x₀,x₁,...:
-//	m = (x₀+x₁+...)/n,
-//	s2 = ((x₀-m)²+(x₁-m)²+...)/(n-1),
-//	n = len(x).
+// MeanVar computes the sample mean (m) and the sample variance (s2) of x[0],...,x[n-1]:
+//	m = (x[0]+...+x[n-1])/n,
+//	s2 = ((x[0]-m)²+...+(x[n-1]-m)²)/(n-1).
 // Precondition: n ≥ 2.
 func MeanVar(x []float64) (m, s2 float64) {
 	n := len(x)
