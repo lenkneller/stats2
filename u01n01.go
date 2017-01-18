@@ -1,3 +1,7 @@
+// Copyright (c) 2017 Leonid Kneller
+//
+// See the LICENSE file for an open source license information.
+
 package stats2
 
 import (
